@@ -135,10 +135,6 @@ class MultiSelect extends Component {
   render() {
     const { showOptions, searchKey, searchOptions } = this.state;
     const { options, value } = this.props;
-    console.log(
-      "offsetHeight ",
-      this.node.current && this.node.current.offsetHeight
-    );
     return (
       <SelectContainer ref={this.node} className="select-container">
         <div
