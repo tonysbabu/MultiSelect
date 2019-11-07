@@ -1,2 +1,0 @@
-# MultiSelect
-Created with CodeSandbox

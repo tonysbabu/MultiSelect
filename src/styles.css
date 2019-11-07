@@ -1,0 +1,80 @@
+.App {
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.selected-options-container {
+  width: 100%;
+  min-height: 32px; /*height of container - padding*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-options-wrapper {
+  max-height: 64px;
+  overflow: auto;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  padding: 8px;
+}
+
+.vertical-seperator {
+  align-self: stretch;
+  background-color: rgb(204, 204, 204);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  width: 1px;
+}
+
+.selected-option {
+  background: #5e6264;
+  border-radius: 4px;
+  color: #fff;
+  cursor: initial;
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  padding: 3px 7px;
+}
+
+.selected-option i {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 7px;
+}
+
+/* .selected-option i.fa-times:after {
+  content: "\f00d";
+} */
+
+.selected-option:last-of-type {
+  margin-right: 0;
+}
+
+.search-input-container {
+  display: flex;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.select-input-box {
+  background: #f9f9f8;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  width: 93%;
+}
+
+.search-icon {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
