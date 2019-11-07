@@ -11,13 +11,14 @@ function App() {
   };
   return (
     <div className="App">
-      <MultiSelect
+     <div className='multi-select-container' style={{ width: '25%', display: 'flex', alignItems: 'center' }}>
+        <MultiSelect
         value={selectedOptions}
         options={[
           { value: "option1", label: "option1" },
           { value: "option2", label: "option2" },
           { value: "option3", label: "option3" },
-          { value: "option3", label: "option3" },
+          { value: "option31", label: "option31" },
           { value: "option4", label: "option4" },
           { value: "option5", label: "option5" },
           { value: "option6", label: "option6" },
@@ -28,6 +29,7 @@ function App() {
         ]}
         onChange={handleChange}
       />
+      </div> 
     </div>
   );
 }

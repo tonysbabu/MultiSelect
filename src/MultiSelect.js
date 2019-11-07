@@ -188,13 +188,12 @@ class MultiSelect extends Component {
               ? searchOptions &&
                 searchOptions.map(option => {
                   return (
-                    <div
-                      className="option"
+                    <Option
                       key={option.value}
                       onClick={() => this.handleOptionClick(option)}
                     >
                       {option.label}
-                    </div>
+                    </Option>
                   );
                 })
               : options &&
